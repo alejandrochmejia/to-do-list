@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <title>To do List</title>
 </head>
 <body class="bg-gray-800 w-screen h-screen ">
@@ -15,5 +16,21 @@
       <li class="cursor-pointer text-gray-100 text-center flex justify-center items-center h-full w-16"><span>Year</span></li>
     </ul>
   </nav>
+  <main class="flex flex-col w-dvw justify-center items-center text-gray-100 mt-4 gap-6">
+
+    <div class="flex flex-row gap-7">
+      <i class="bi bi-arrow-left-short text-3xl text-gray-100 cursor-pointer flex items-center font-extralight"></i>
+      <div class="flex flex-col text-center cursor-default">
+        <span class="font-semibold text-3xl animate-pulse">Saturday</span>
+        <span class="font-extralight">Sep 7, 2024</span>
+      </div>
+      <i class="bi bi-arrow-right-short text-3xl text-gray-100 cursor-pointer flex items-center font-extralight"></i>
+    </div>
+
+    <div class="flex flex-row">
+      <div class="flex justify-center items-center p-2 bg-gray-600 rounded-s-md"><i class="bi bi-justify-left"></i></div>
+      <input class="bg-gray-700 rounded-e-md p-2 focus:outline-none w-96" placeholder="Add a task">
+    </div>
+  </main>
 </body>
 </html>
